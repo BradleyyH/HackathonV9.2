@@ -1,4 +1,5 @@
 import './App.css'
+import './styles.css'
 import ChessBoard from './pages/ChessBoard';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 

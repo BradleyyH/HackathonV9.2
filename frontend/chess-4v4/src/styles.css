@@ -1,0 +1,20 @@
+body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1028dd, #531602);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: rgb(0, 255, 255);
+    font-size: 50px;
+    padding: 20px;
+}
+
+div{
+    color: rgb(0, 255, 38);
+    font-size: 30px;
+    padding: 10px;
+}
