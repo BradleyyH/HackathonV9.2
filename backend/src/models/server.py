@@ -2,6 +2,11 @@ from flask import Flask, render_template, request
 from flask_socketio import SocketIO, send, emit, join_room, leave_room
 import board, move, piece, position, move_validator
 
+from flask_cors import CORS, cross_origin
+app = Flask(__name__)
+cors = CORS(app) # allow CORS for all domains on all routes.
+app.config['CORS_HEADERS'] = 'Content-Type'
+
 from board import *
 from move import *
 from piece import *
@@ -9,9 +14,13 @@ from position import *
 from move_validator import *
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your_secret_key'
+allowed_origins = [
+    "http://10.2.27.52:3000",
+    "http://localhost:3000",
+]
 
-socketio = SocketIO(app)
+CORS(app, origins=allowed_origins)
+socketio = SocketIO(app, cors_allowed_origins=allowed_origins)
 
 # Dictionary to store users and their assigned rooms
 players = {}
@@ -40,6 +49,7 @@ def handle_message(data):
 @socketio.on('moves')
 def handle_move(data):
     print(data)
+    print("asda")
 
 # Handle disconnects
 @socketio.on('disconnect')
