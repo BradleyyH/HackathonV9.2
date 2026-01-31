@@ -1,7 +1,11 @@
 """
 Basic move validation to see if a move is legal
 """
-from ...models import Board, Move, Position, Piece, PieceType, Colour
+import board, move, position, piece
+from board import *
+from move import *
+from position import *
+from piece import *
 
 
 class MoveValidator:
