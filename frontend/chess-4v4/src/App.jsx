@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <h1>Chess 4v4</h1>
+        <h1>Multiplayer Chess</h1>
         <Routes>
           <Route path="/" element={<ChessBoard />} />
         </Routes>
