@@ -6,9 +6,8 @@ Row 7 is the bottom (white's starting side)
 Uses unique piece IDs: 0 = empty, 1+ = piece IDs
 """
 from typing import Optional
-from .position import Position
-from .piece import Piece, Colour, PieceType
-
+from position import Position
+from piece import Piece, Colour, PieceType
 
 class Board:
     
