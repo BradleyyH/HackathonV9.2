@@ -49,9 +49,12 @@ function ChessBoard() {
   }
 
   return (
-    <div style={{ width: '1000px', margin: 'auto', paddingTop: '50px' }}>
-      <h1>4v4 Chess</h1>
-      <Chessboard position={game.fen()} onPieceDrop={onDrop} />
+    <div className="chess-board-container">
+      <Chessboard 
+        position={game.fen()} 
+        onPieceDrop={onDrop}
+        boardWidth={600}
+      />
     </div>
   );
 }

@@ -4,18 +4,14 @@ import ChessBoard from './pages/ChessBoard';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
-
   return (
     <Router>
-      <div>
+      <div className="app-container">
         <h1>Chess 4v4</h1>
+        <Routes>
+          <Route path="/" element={<ChessBoard />} />
+        </Routes>
       </div>
-    
-
-    <Routes>
-      <Route path="/" element={<ChessBoard />} />
-      
-    </Routes>
     </Router>
   );
 }

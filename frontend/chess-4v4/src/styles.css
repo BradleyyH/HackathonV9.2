@@ -1,20 +1,18 @@
-body{
+body {
     min-height: 100vh;
-    background: linear-gradient(to bottom, #1028dd, #531602);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-size: cover;
-    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-attachment: fixed;
 }
 
-h1{
-    color: rgb(0, 255, 255);
-    font-size: 50px;
-    padding: 20px;
-}
-
-div{
-    color: rgb(0, 255, 38);
-    font-size: 30px;
-    padding: 10px;
+h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
 }
